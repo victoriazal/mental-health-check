@@ -136,6 +136,7 @@ button:active{
   left: 0;
   right: 0;
   width: calc(70vw);
+  
 }
 
 
@@ -153,10 +154,11 @@ button:active{
 
 .carousel-item {
   display: none;
-  animation: fadeVisibility 0.5s;
+  animation: fadeVisibility 1.8s;
 }
 .carousel-item-visible {
   display: block;
+  color: azure;
 }
 
 
