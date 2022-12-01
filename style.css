@@ -40,7 +40,7 @@
 
 body {
   display: block;
-  background: #FCBBC5;
+  background: #ac5f6a;
   min-height: 100vh;
 }
 
@@ -59,7 +59,7 @@ body {
 
 .content h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 2px #959BDA;
+  -webkit-text-stroke: 0.5px #e7e9ff;
 }
 
 .content h2:nth-child(2) {
@@ -99,4 +99,68 @@ body {
   .content h2 {
     font-size: 3em;
   }
+  button{
+    margin-top: 5rem;
+  }
+}
+
+.carousel-item-visible{
+  font-family: Prata, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 0.9em;
+  text-align:center;
+  width: calc(60vw);
+}
+
+button{
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 0.7px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+button:active{
+  background-color: #ffe99a;
+  opacity: 0.8;
+}
+
+.info-carousel{
+  display: flex;
+  position: absolute;
+  top: calc(55vh);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: calc(70vw);
+}
+
+
+.carousel-actions button#carousel-button-prev {
+  margin-left: 20px;
+}
+
+.carousel-actions button#carousel-button-next {
+  margin-right: 20px;
+}
+
+.carousel-item-hidden{
+  display: none;
+}
+
+.carousel-item {
+  display: none;
+  animation: fadeVisibility 0.5s;
+}
+.carousel-item-visible {
+  display: block;
+}
+
+
+@keyframes fadeVisibility{
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
