@@ -30,7 +30,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -57,6 +57,17 @@ body {
   text-align: center;
 }
 
+.content-small-par{
+  font-family:'Cinzel', Courier, monospace;
+  color: aliceblue;
+  position: absolute;
+  top: calc(32vh);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
 .content h2:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 0.5px #e7e9ff;
@@ -99,10 +110,12 @@ body {
   .content h2 {
     font-size: 3em;
   }
-  button{
-    margin-top: 5rem;
+
+  .content-small-par{
+    font-size: 0.7em;
   }
 }
+
 
 .carousel-item-visible{
   font-family: Prata, Helvetica, sans-serif;
@@ -112,20 +125,28 @@ body {
   width: calc(60vw);
 }
 
-button{
+.move-on-btn{
   cursor: pointer;
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  border: 0.7px solid white;
+  font-family:'Cinzel', Times, serif;
+  font-size: calc(2);
+  width: max-content;
+  padding: 2px 8px;
+  border: 0.1px solid white;
   background-color: transparent;
   color: white;
+  position: absolute;
+  top: calc(52vh);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+.move-on-btn:hover{
+  font-size: 16px;
 }
 
-button:active{
-  background-color: #ffe99a;
-  opacity: 0.8;
-}
 
 .info-carousel{
   display: flex;
@@ -152,6 +173,20 @@ button:active{
   display: none;
 }
 
+.supportive-text{
+  position: absolute;
+  color: #f3eded;
+  top: calc(30vh);
+  margin-left: auto;
+  font-family: 'Cinzel', Times, serif;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 5px;
+  animation: fadeVisibility 3s;
+}
+
 .carousel-item {
   display: none;
   animation: fadeVisibility 1.8s;
@@ -165,4 +200,9 @@ button:active{
 @keyframes fadeVisibility{
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+img{
+  width: 50px;
+  
 }
