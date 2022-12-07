@@ -176,7 +176,7 @@ body {
 .supportive-text{
   position: absolute;
   color: #f3eded;
-  top: calc(30vh);
+  top: calc(50vh);
   margin-left: auto;
   font-family: 'Cinzel', Times, serif;
   margin-right: auto;
@@ -194,6 +194,10 @@ body {
 .carousel-item-visible {
   display: block;
   color: azure;
+}
+
+.move-on-btn{
+  top: calc(60vh);
 }
 
 
